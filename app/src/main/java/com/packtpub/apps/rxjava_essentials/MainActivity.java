@@ -5,11 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
-import butterknife.ButterKnife;
-import butterknife.InjectView;
+
 import com.packtpub.apps.rxjava_essentials.chapter4.DistinctExampleFragment;
 import com.packtpub.apps.rxjava_essentials.chapter4.FilterExampleFragment;
 import com.packtpub.apps.rxjava_essentials.chapter4.TakeExampleFragment;
@@ -31,7 +30,10 @@ import com.packtpub.apps.rxjava_essentials.example3.ThirdExampleFragment;
 import com.packtpub.apps.rxjava_essentials.navigation_drawer.NavigationDrawerCallbacks;
 import com.packtpub.apps.rxjava_essentials.navigation_drawer.NavigationDrawerFragment;
 
-public class MainActivity extends ActionBarActivity implements NavigationDrawerCallbacks {
+import butterknife.ButterKnife;
+import butterknife.InjectView;
+
+public class MainActivity extends AppCompatActivity implements NavigationDrawerCallbacks {
 
   @InjectView(R.id.toolbar_actionbar) Toolbar mToolbar;
 

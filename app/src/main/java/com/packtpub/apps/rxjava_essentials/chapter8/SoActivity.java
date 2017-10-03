@@ -4,20 +4,23 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import butterknife.ButterKnife;
-import butterknife.InjectView;
+
 import com.packtpub.apps.rxjava_essentials.App;
 import com.packtpub.apps.rxjava_essentials.R;
 import com.packtpub.apps.rxjava_essentials.chapter8.api.stackexchange.SeApiManager;
+
 import java.util.ArrayList;
 
-public class SoActivity extends ActionBarActivity
+import butterknife.ButterKnife;
+import butterknife.InjectView;
+
+public class SoActivity extends AppCompatActivity
     implements SoAdapter.ViewHolder.OpenProfileListener {
 
   @InjectView(R.id.so_recyclerview) RecyclerView mRecyclerView;

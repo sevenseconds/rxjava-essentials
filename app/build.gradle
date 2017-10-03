@@ -2,13 +2,13 @@ apply plugin: 'me.tatarka.retrolambda'
 apply plugin: 'com.android.application'
 
 android {
-  compileSdkVersion 23
-  buildToolsVersion "23.0.0"
+  compileSdkVersion 26
+  buildToolsVersion "26.0.1"
 
   defaultConfig {
     applicationId "com.packtpub.apps.rxjava_essentials"
     minSdkVersion 16
-    targetSdkVersion 23
+    targetSdkVersion 26
     versionCode 1
     versionName "1.0"
   }
@@ -38,14 +38,18 @@ android {
 repositories {
   jcenter()
   maven { url "https://github.com/alter-ego/advanced-android-logger/raw/develop/releases/" }
+  maven {
+    url 'https://maven.google.com/'
+    name 'Google'
+  }
 }
 
 dependencies {
   compile fileTree(dir: 'libs', include: ['*.jar'])
-  compile 'com.android.support:support-v4:23.0.0'
-  compile "com.android.support:appcompat-v7:23.0.0"
-  compile 'com.android.support:recyclerview-v7:23.0.0'
-  compile 'com.android.support:cardview-v7:23.0.0'
+  compile 'com.android.support:support-v4:26.1.0'
+  compile "com.android.support:appcompat-v7:26.1.0"
+  compile 'com.android.support:recyclerview-v7:26.1.0'
+  compile 'com.android.support:cardview-v7:26.1.0'
 
   compile 'com.alterego:advancedandroidlogger:1.0.3@aar'
 
